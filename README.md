@@ -6,6 +6,9 @@ This is a collection of best practises I have learned and figured out during my 
 
 ## Programmin, common
 
+- When giving examples show only the correct way to do something. Memories are flawed and people might just remember the wrong way to do something if you show it to them.
+- When reviewing pull requests try to always find something good to say as well.
+
 ### Return early on exception conditions
 
 In most cases the code becomes more readable and easier to maintain when you return early on exception cases.
@@ -58,6 +61,10 @@ testCases.forEach(testCase => {
     });
 });
 ```
+## C#
+
+- Set `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` to get warnings as errors
+- https://docs.fluentvalidation.net/en/latest/
 
 ## EF Core
 
@@ -71,7 +78,8 @@ testCases.forEach(testCase => {
 - Use `ExecuteUpdate` and `ExecuteDelete` if possible (especially on big updates/deletes)
 - When performance is an issue use `Select` for individual fields instead of `Include`
 
-#### References
+## References
 
 - [Microsoft learn](https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying)
 - [ND Conference talk by Jernej Kavka](https://youtu.be/oE8lEP4mKjk?si=SSNkvrYmE_ALVlUa)
+- [ND Conference talk by Scott Sauber](https://www.youtube.com/watch?v=ZqQOm0PK6ME)
